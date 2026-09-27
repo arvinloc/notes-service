@@ -14,4 +14,4 @@ async def index(request: Request, user: dict = Depends(get_current_user)):
 
 @router.get("/protected", response_class=HTMLResponse)
 async def protected_page(request: Request, user: dict = Depends(get_current_user)):
-    return templates.TemplateResponse("index.html", {"request": request, "user": user})
+    return templates.TemplateResponse(request, "index.html", {"user": user})
