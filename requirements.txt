@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+loguru
+pydantic
+pydantic-settings
+alembic
+SQLAlchemy
+aiosqlite
+Jinja2
